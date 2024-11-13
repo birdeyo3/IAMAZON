@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAMAZON</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            width: 300px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0;
+            font-size: 1.6em;
+        }
+
+        .menu-item p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .menu-item button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .menu-item button:hover {
+            background-color: #555;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1.2em;
+        }
+
+        .contact-form button {
+            background-color: #f1c40f;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome To IAMAZON!</h1>
+        <p>YOUR ITEM delivered to your door fresh.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#menu">ORDER</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1546069901-beb85fd65be7" HEADPHONES">
+            <h3>GUCCI HEADPHONE</h3>
+            <p>A GAMING HEADPHONE ONLY FOR $280.</p>
+            <button onclick="orderItem('HEADPHONES')">Order Now</button>
+        </div>
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1564679287-10a9d431fc35" alt="keyboard">
+            <h3>NIKEE KEYBOARD</h3>
+            <p>COOL NIKE KEYBOARD ONLY FOR $400.</p>
+            <button onclick="orderItem('KEYBOARD')">Order Now</button>
+        </div>
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="MONITOR">
+            <h3>PUMA MONITOR</h3>
+            <p>PUMA MONITOR 369 DEGREE ROTATION ONLY $150.</p>
+            <button onclick="orderItem('NAATI KOLI SUKKA')">Order Now</button>
+        </div>
+     <!-- Menu Item 4 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="GAMING CHAIR">
+            <h3>ADDIDAS GAMING CHAIR</h3>
+            <p>RGB MASSAGING GAMING CHAIR ONLY $200.</p>
+            <button onclick="orderItem('GAMING CHAIR')">Order Now</button>
+        </div>
+      <!-- Menu Item 5 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="MOUSE">
+            <h3>MINECRAFT MOUSE</h3>
+            <p>MINECRAFT MOUSE 698PIXEL PER MIN ONLY $160 .</p>
+            <button onclick="orderItem('MOUSE')">Order Now</button>
+        </div>
+      <!-- Menu Item 6 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="MOUSE PAD">
+            <h3>BLACK CHAPRI STYLE MOUSE PAD</h3>
+            <p> VERY CHAPRI STYLE MOUSE PAD ONLY $350.</p>
+            <button onclick="orderItem('MOUSE PAD')">Order Now</button>
+        </div>
+ <!-- Menu Item 7 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="PC">
+            <h3>ALREAD BUILT PC</h3>
+            <p> BUILT PC WITH RTX 9090 INTELCOR ULTRA PRO MAX ONLY $10000.</p>
+            <button onclick="orderItem('PC')">Order Now</button>
+        </div>
+ <!-- Menu Item 8 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="WEBCAM">
+            <h3>RGB NEKKKA WEBCAM</h3>
+            <p>FULL 10890P 60FPS 4K ULTRA HD CAMERA ONLY $179.</p>
+            <button onclick="orderItem('WEBCAM')">Order Now</button>
+        </div>
+ <!-- Menu Item 9 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1577812221377-d09082d509fd" alt="GAMING LAPTOP">
+            <h3>ABIBAS GAMING LAPTOP</h3>
+            <p> ABIBAS LAPTOP INTEL CORE ULTRA WINDOWS 69 ONLY $569.</p>
+            <button onclick="orderItem('ABIBAS GAMING LAPTOP')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="Contacts" class="contact-form">
+        <h2>CONFIRM ORDER</h2>
+        <p>If you have FINISHED SELECTING THE ITEMS YOU WANT NOW YOU CAN FILL IN THE DETAILS AND ORDER!</p>
+        <form>
+            <textarea placeholder="Your Name" required></textarea>
+            <textarea placeholder="Your address" required></textarea>
+            <textarea placeholder="Your Payment" required></textarea>
+            <textarea placeholder="CREDIT CARD NUMBER" required></textarea>
+            <textarea placeholder="CONTACT NUMBER" required></textarea>
+            <button type="submit">CONFIRM ORDER</button>
+            <button type="submit">PAY FROM HOME</button>
+            
+            
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;IAMAZON.com........E.</p>
+    </footer>
+
+    <script>
+        function >Order Now<(itemName) {
+            alert("You have ordered: " + itemName + ". we will process your order shortly!");
+        }
+    </script>
+</body>
+</html>
